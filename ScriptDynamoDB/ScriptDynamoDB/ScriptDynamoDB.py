@@ -6,15 +6,15 @@ from config import get_config
 TRACK = ['#AWS']
 
 # Chaves de acesso da API do Twitter
-consumer_key = get_config('T3zoMYREJBo5EyjUfXuZXcHRm')
-consumer_secret = get_config('lCcoPVp7FQzjRvQwiJUJdHbS6ubtjKi6YPa8bPeY6oB9bz1mok')
-access_token = get_config('1271154451282305024-rP49dx3cWqWDMEN5bMZCzDmo0gDa8W')
-access_token_secret = get_config('dUH9S7YnhmCwqJGKQwiqsnPbu9ulQ9fIKZgYQOVttSJcw')
+consumer_key = get_config('TWITTER_CONSUMER_KEY')
+consumer_secret = get_config('TWITTER_CONSUMER_SECRET')
+access_token = get_config('TWITTER_ACCESS_TOKEN')
+access_token_secret = get_config('TWITTER_ACCESS_SECRET')
 
 # Configurações do dynamodb, criado na AWS
 session = boto3.Session(region_name='us-east-2',
-                        aws_access_key_id=get_config('AKIA5GXPFTHBXCOWRJTV'),
-                        aws_secret_access_key=get_config('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'))
+                        aws_access_key_id=get_config('AWS_ACCESS_KEY_ID'),
+                        aws_secret_access_key=get_config('AWS_SECRET_ACCESS_KEY'))
 ddb = session.resource('dynamodb')
 table = ddb.Table('runTwitter')
 
