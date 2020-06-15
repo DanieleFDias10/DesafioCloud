@@ -3,7 +3,7 @@ import tweepy
 
 from config import get_config
 
-TRACK = ['#AWS']
+TRACK = ['#cloud, #container, #devops, #aws, #microservices, #docker, #openstack, #automation, #gcp, #azure, #istio, #sre']
 
 # Chaves de acesso da API do Twitter
 consumer_key = get_config('TWITTER_CONSUMER_KEY')
