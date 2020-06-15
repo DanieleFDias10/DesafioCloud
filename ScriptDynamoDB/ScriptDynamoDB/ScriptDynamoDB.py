@@ -3,6 +3,7 @@ import tweepy
 
 from config import get_config
 
+#Hashtags a serem buscadas
 TRACK = ['#cloud, #container, #devops, #aws, #microservices, #docker, #openstack, #automation, #gcp, #azure, #istio, #sre']
 
 # Chaves de acesso da API do Twitter
